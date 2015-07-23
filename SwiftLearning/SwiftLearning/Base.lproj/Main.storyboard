@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J82-FY-V2E">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="v2v-LE-pVr">
+            <objects>
+                <navigationController id="J82-FY-V2E" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gf2-2f-Qnm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xk7-fc-Wbo" kind="relationship" relationship="rootViewController" id="50f-eU-muG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYg-SJ-Zwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="-7"/>
+        </scene>
+        <!--Swift Learning-->
+        <scene sceneID="NXz-qN-DBY">
+            <objects>
+                <viewController title="Swift Learning" id="xk7-fc-Wbo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nVp-l1-A5q"/>
+                        <viewControllerLayoutGuide type="bottom" id="tId-WP-RYz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ily-jC-z5I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xby-Dg-h66">
+                                <rect key="frame" x="31" y="95" width="106" height="30"/>
+                                <state key="normal" title="基础部分">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OrY-VF-UyR" kind="show" id="dkw-5H-fC7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swift Learning" id="yRS-Yx-nqf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dvk-Fw-hyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544" y="1"/>
+        </scene>
+        <!--基础部分-->
+        <scene sceneID="nQj-dl-Sbh">
+            <objects>
+                <viewController title="基础部分" id="OrY-VF-UyR" customClass="ViewController1" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AEA-MT-Vel"/>
+                        <viewControllerLayoutGuide type="bottom" id="p69-qh-ggY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ndv-iH-E4z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="基础部分" id="RPC-be-y1J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BF8-3O-kgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="7"/>
+        </scene>
+    </scenes>
+</document>
