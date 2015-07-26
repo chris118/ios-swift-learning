@@ -16,6 +16,7 @@
 		884209151B5FD6FE00315345 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884209131B5FD6FE00315345 /* LaunchScreen.xib */; };
 		884209211B5FD6FE00315345 /* SwiftLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884209201B5FD6FE00315345 /* SwiftLearningTests.swift */; };
 		8842092B1B5FD96900315345 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842092A1B5FD96900315345 /* ViewController1.swift */; };
+		88DCD7611B65123D0074AB5E /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DCD7601B65123D0074AB5E /* ViewController4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		884209201B5FD6FE00315345 /* SwiftLearningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearningTests.swift; sourceTree = "<group>"; };
 		8842092A1B5FD96900315345 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		8842092C1B5FDFEA00315345 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		88DCD7601B65123D0074AB5E /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				8842092A1B5FD96900315345 /* ViewController1.swift */,
 				8806740C1B637AFC00CFA462 /* ViewController2.swift */,
 				8806740E1B646D5600CFA462 /* ViewController3.swift */,
+				88DCD7601B65123D0074AB5E /* ViewController4.swift */,
 				8842090E1B5FD6FE00315345 /* Main.storyboard */,
 				884209111B5FD6FE00315345 /* Images.xcassets */,
 				884209131B5FD6FE00315345 /* LaunchScreen.xib */,
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8806740F1B646D5600CFA462 /* ViewController3.swift in Sources */,
+				88DCD7611B65123D0074AB5E /* ViewController4.swift in Sources */,
 				8842092B1B5FD96900315345 /* ViewController1.swift in Sources */,
 				8806740D1B637AFC00CFA462 /* ViewController2.swift in Sources */,
 				8842090D1B5FD6FE00315345 /* ViewController.swift in Sources */,

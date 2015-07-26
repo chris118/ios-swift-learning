@@ -59,6 +59,15 @@
                                     <segue destination="wPi-g0-Eiu" kind="show" id="1ai-hm-5Xx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgF-rK-bNV">
+                                <rect key="frame" x="46" y="247" width="76" height="30"/>
+                                <state key="normal" title="结构 类">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="F2O-71-FhA" kind="show" id="iaB-gJ-pc6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -67,6 +76,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dvk-Fw-hyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="544" y="1"/>
+        </scene>
+        <!--类 结构-->
+        <scene sceneID="vy2-ri-8AN">
+            <objects>
+                <viewController title="类 结构" id="F2O-71-FhA" customClass="ViewController4" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZeP-Tb-70O"/>
+                        <viewControllerLayoutGuide type="bottom" id="xuh-cu-F7j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ibl-JB-J4V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="类 结构" id="nCt-SN-6RQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFS-wR-Osa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="598"/>
         </scene>
         <!--基础部分-->
         <scene sceneID="nQj-dl-Sbh">
@@ -85,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BF8-3O-kgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="-819"/>
+            <point key="canvasLocation" x="636" y="-835"/>
         </scene>
         <!--函数-->
         <scene sceneID="P11-TO-enk">
@@ -104,12 +132,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgf-fb-JyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276" y="-59"/>
+            <point key="canvasLocation" x="1556" y="-827"/>
         </scene>
-        <!--View Controller3-->
+        <!--闭包-->
         <scene sceneID="fra-9P-peL">
             <objects>
-                <viewController id="wPi-g0-Eiu" customClass="ViewController3" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="闭包" id="wPi-g0-Eiu" customClass="ViewController3" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ode-iL-wyT"/>
                         <viewControllerLayoutGuide type="bottom" id="SP6-K4-VpU"/>
@@ -119,10 +147,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="闭包" id="HAf-FM-hJA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7x9-5H-ju3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="749"/>
+            <point key="canvasLocation" x="2404" y="-819"/>
         </scene>
     </scenes>
 </document>
