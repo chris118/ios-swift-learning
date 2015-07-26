@@ -13,7 +13,8 @@ class ViewController1: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.LetAndVar();
+        self.Learning_1();
+        self.Learning_2();
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +33,7 @@ class ViewController1: UIViewController {
     }
     */
     
-    private func LetAndVar(){
+    private func Learning_1(){
         let maximum = 10
         //maximum = 5; //error
         var counter = 0
@@ -120,6 +121,8 @@ class ViewController1: UIViewController {
         if assumeString != nil{  // 用法和普通可选一样用
             println("i am implicitly optional string")
         }
+        
+        
         
         //断言
         let t = -3
@@ -235,6 +238,118 @@ class ViewController1: UIViewController {
         var emptyDict = Dictionary<Int, String>() //空字典声明
         emptyDict = [:] // 字典置空
         
+    }
+    
+    private func Learning_2(){
+        
+        for _ in 1...5 { // 不关心循环内容可以用 _
+            println("hhh");
+        }
+        
+        let numbersOflegs = ["spider":8, "ant":6, "cat":4] // note: 字典是无序的
+        for (animal, legCount) in numbersOflegs {
+            println("\(animal) have \(legCount) legs")
+        }
+        
+        for var index = 0; index < 3; index++ { //
+            println("say something")
+        }
+        
+        // switch
+        var someValue = 5
+        switch someValue {
+        case 1...3:
+            println("value in 1-3")
+        case 3...6:
+            println("value in 3-6")
+        default:
+            println("no match")
+        }
+        
+        var point = (1, 1)
+        switch point {
+        case (0,_):
+            println("0, _")
+        case (_, 0):
+            println("_, 0")
+        case (-2, 2):
+            println("-1, 2")
+        case (-1...0, 0...1):
+            println("-1...0, 0...1")
+        case (0...2, 0...2):
+            println("0...2, 0...2")
+        default:
+            println("no match")
+        }
+        
+        switch point {
+        case (let x, 1):
+            println("math ponit, x is: \(x)")
+        default:
+            println("no match")
+        }
+        
+        switch point {
+        case let (x, y) where x == y: // note: 没有default 分支
+            println("bingo")
+
+        }
+        
+        switch point {
+        case let (x, y) where x == y:
+            break; // note: 忽略分支 否则便宜报错
+        }
+        
+        
+        // 一个小例子 演示break的用法，同时也演示了 optional 的用法
+        let numberSymbol: Character = "三"
+        
+        var possibleIntegerValue: Int?
+        switch numberSymbol {
+            case "1", "?", "一", "?":
+            possibleIntegerValue = 1
+        case "2", "?", "二", "?":
+            possibleIntegerValue = 2
+        case "3", "?", "三", "?":
+             possibleIntegerValue = 3
+        case "4", "?", "四", "?":
+             possibleIntegerValue = 4
+        default:
+             break
+         }
+
+        if let integerValue = possibleIntegerValue {
+            
+                println("The integer value of \(numberSymbol) is \(integerValue).")
+            } else {
+                println("An integer value could not be found for \(numberSymbol).")
+        }
+        
+        // fallthrough
+        let wa = 5
+        switch wa {
+             case 1,2,3,4,5,6:
+                println("founded")
+                fallthrough
+             default:
+                println("fallthrough next statement")
+        }
+        
+        
+        //Labeled Statements
+        let sa = 5
+        whileLabel: while(true){ //label
+                switch sa {
+             case 1,2,3,4,5,6:
+            
+                println("founded")
+                break whileLabel  // not break the switch but wihile loop by using label
+                
+             default:
+            println("fallthrough next statement")
+                }
+                
+        }
     }
 
 }

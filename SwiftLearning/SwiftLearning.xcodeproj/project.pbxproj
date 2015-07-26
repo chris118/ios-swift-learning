@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8806740D1B637AFC00CFA462 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8806740C1B637AFC00CFA462 /* ViewController2.swift */; };
+		8806740F1B646D5600CFA462 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8806740E1B646D5600CFA462 /* ViewController3.swift */; };
 		8842090B1B5FD6FE00315345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842090A1B5FD6FE00315345 /* AppDelegate.swift */; };
 		8842090D1B5FD6FE00315345 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842090C1B5FD6FE00315345 /* ViewController.swift */; };
 		884209101B5FD6FE00315345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8842090E1B5FD6FE00315345 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8806740C1B637AFC00CFA462 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		8806740E1B646D5600CFA462 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		884209051B5FD6FE00315345 /* SwiftLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884209091B5FD6FE00315345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8842090A1B5FD6FE00315345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				8842090A1B5FD6FE00315345 /* AppDelegate.swift */,
 				8842090C1B5FD6FE00315345 /* ViewController.swift */,
 				8842092A1B5FD96900315345 /* ViewController1.swift */,
+				8806740C1B637AFC00CFA462 /* ViewController2.swift */,
+				8806740E1B646D5600CFA462 /* ViewController3.swift */,
 				8842090E1B5FD6FE00315345 /* Main.storyboard */,
 				884209111B5FD6FE00315345 /* Images.xcassets */,
 				884209131B5FD6FE00315345 /* LaunchScreen.xib */,
@@ -217,7 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8806740F1B646D5600CFA462 /* ViewController3.swift in Sources */,
 				8842092B1B5FD96900315345 /* ViewController1.swift in Sources */,
+				8806740D1B637AFC00CFA462 /* ViewController2.swift in Sources */,
 				8842090D1B5FD6FE00315345 /* ViewController.swift in Sources */,
 				8842090B1B5FD6FE00315345 /* AppDelegate.swift in Sources */,
 			);
@@ -413,6 +421,7 @@
 				884209261B5FD6FE00315345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		884209271B5FD6FE00315345 /* Build configuration list for PBXNativeTarget "SwiftLearningTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +430,7 @@
 				884209291B5FD6FE00315345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
