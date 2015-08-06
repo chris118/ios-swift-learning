@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGw-hb-0sZ">
-                                <rect key="frame" x="31" y="146" width="106" height="30"/>
+                                <rect key="frame" x="125" y="95" width="106" height="30"/>
                                 <state key="normal" title="函数">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21B-v6-crY">
-                                <rect key="frame" x="61" y="199" width="46" height="30"/>
+                                <rect key="frame" x="239" y="95" width="46" height="30"/>
                                 <state key="normal" title="闭包">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -60,12 +60,48 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgF-rK-bNV">
-                                <rect key="frame" x="46" y="247" width="76" height="30"/>
-                                <state key="normal" title="结构 类">
+                                <rect key="frame" x="46" y="159" width="76" height="30"/>
+                                <state key="normal" title="结构类一">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="F2O-71-FhA" kind="show" id="iaB-gJ-pc6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owb-9h-Tk6">
+                                <rect key="frame" x="142" y="159" width="73" height="30"/>
+                                <state key="normal" title="结构类二">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ot7-CO-992" kind="show" id="6Cj-QZ-5O4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLK-y6-Kkb">
+                                <rect key="frame" x="244" y="159" width="46" height="30"/>
+                                <state key="normal" title="ARC">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hkK-rL-RR4" kind="show" id="QR8-49-xCj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6se-WD-9Te">
+                                <rect key="frame" x="42" y="219" width="85" height="30"/>
+                                <state key="normal" title="自判断链接">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="l00-lN-mxw" kind="show" id="K0W-Qu-ndY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-9R-o0Z">
+                                <rect key="frame" x="132" y="219" width="92" height="30"/>
+                                <state key="normal" title="类型转换">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DZg-Qf-UqF" kind="show" id="0hG-Bq-wcf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -75,7 +111,79 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dvk-Fw-hyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="544" y="1"/>
+            <point key="canvasLocation" x="568" y="-19"/>
+        </scene>
+        <!--类之二-->
+        <scene sceneID="tcu-ec-h6k">
+            <objects>
+                <viewController title="类之二" id="ot7-CO-992" customClass="ViewController5" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NQK-GS-3UK"/>
+                        <viewControllerLayoutGuide type="bottom" id="oHp-cN-kno"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nmF-Oi-lTU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ya-DG-gKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3300" y="-1861"/>
+        </scene>
+        <!--ARC-->
+        <scene sceneID="loO-Yj-iif">
+            <objects>
+                <viewController title="ARC" id="hkK-rL-RR4" customClass="ViewController6" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nQ0-a1-0jz"/>
+                        <viewControllerLayoutGuide type="bottom" id="9nA-tu-Xed"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7oA-0g-8S0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WaW-Cz-AWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-894" y="1080"/>
+        </scene>
+        <!--自判断链接-->
+        <scene sceneID="adS-dV-YRe">
+            <objects>
+                <viewController title="自判断链接" id="l00-lN-mxw" customClass="ViewController7" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jn2-aH-0tH"/>
+                        <viewControllerLayoutGuide type="bottom" id="PaX-ix-aJG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Zi-Y3-rvz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fkv-WE-Cc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-115" y="1083"/>
+        </scene>
+        <!--类型转换-->
+        <scene sceneID="e35-pN-Oz4">
+            <objects>
+                <viewController title="类型转换" id="DZg-Qf-UqF" customClass="ViewController8" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VhP-h9-hhv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ko2-KR-T5I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qba-Ed-vwp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Am3-tJ-f4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="1147"/>
         </scene>
         <!--类 结构-->
         <scene sceneID="vy2-ri-8AN">
@@ -94,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFS-wR-Osa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="598"/>
+            <point key="canvasLocation" x="2372" y="-1902"/>
         </scene>
         <!--基础部分-->
         <scene sceneID="nQj-dl-Sbh">
@@ -113,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BF8-3O-kgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="-835"/>
+            <point key="canvasLocation" x="-420" y="-1943"/>
         </scene>
         <!--函数-->
         <scene sceneID="P11-TO-enk">
@@ -132,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgf-fb-JyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1556" y="-827"/>
+            <point key="canvasLocation" x="500" y="-1935"/>
         </scene>
         <!--闭包-->
         <scene sceneID="fra-9P-peL">
@@ -151,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7x9-5H-ju3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2404" y="-819"/>
+            <point key="canvasLocation" x="1484" y="-1902"/>
         </scene>
     </scenes>
 </document>

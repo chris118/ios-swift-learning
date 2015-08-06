@@ -90,16 +90,149 @@ class ClassProperty{
     }
 }
 
+class Counter{
+    var count: Int = 0
+    func IncrementBy(amount: Int, times: Int){
+        count = amount * times
+        println("Counter value: \(count)")
+    }
+}
+
+//变异方法 可以改变值类型的结构体的 成员
+struct Point {
+    var x=0.0,y=0.0
+    
+    mutating func moveByX(deltaX: Double, y deltaY: Double) {
+        x += deltaX
+        y += deltaY
+    }
+}
+
+//类型方法
+class CounterEx{
+
+   class  func IncrementBy(amount: Int, times: Int){
+        println("I am class method")
+    }
+}
+
+//附属脚本
+struct Matrix{
+    let rows:Int, columns:Int
+    var grid: [Double]
+    
+    init(rows: Int, columns:Int){
+        self.rows = rows
+        self.columns = columns
+        grid = Array(count:rows*columns, repeatedValue: 0.0)
+    }
+    
+    func indexIsValidForRow(row: Int, column: Int) -> Bool{
+        return row >= 0 && row < rows && column >= 0 && column < columns
+    }
+    
+    subscript(row: Int, column: Int) -> Double{
+        get{
+            assert(indexIsValidForRow(row, column: column), "index out of range")
+            return grid[(row*columns) + column]
+        }
+        set{
+            assert(indexIsValidForRow(row, column: column), "index out of range")
+            grid[(row*columns) + column] = newValue
+        }
+    }
+}
+
+//继承
+class Vehicle{
+
+    var numbersOfwheels: Int;
+    var maxPassengers: Int;
+    
+    init(){
+        numbersOfwheels = 0;
+        maxPassengers = 1;
+    }
+    
+    func description() -> String{
+        return "\(numbersOfwheels) wheels: up to \(maxPassengers) passengers."
+    }
+    
+}
+
+class Bicycle: Vehicle {
+    override init() {
+        super.init()
+        numbersOfwheels = 2
+    }
+}
+
+class Tendem: Bicycle {
+    override init() {
+        super.init()
+        maxPassengers = 2
+    }
+}
+
+class Car: Vehicle { // 重载
+    
+    var speed: Int = 0
+    
+    override init() {
+        super.init()
+        numbersOfwheels = 4
+        maxPassengers = 5
+        speed = 50
+    }
+    
+    override func description() -> String {
+        return super.description() + ", speed is: \(speed)"
+    }
+}
+
+class SpeedLimitCar: Car { //重写属性
+    override var speed: Int{
+        get{
+            return super.speed;
+        }
+        set{
+            super.speed = min(newValue, 40)
+        }
+    }
+}
+
+class AutomaticCar: Car {
+    var gear: Int = 0
+    override var speed: Int{
+        didSet{
+            gear = min(speed/10 + 1, 6)
+        }
+    }
+    
+    override init(){
+        super.init()
+    }
+    
+    override func description() -> String {
+        return super.description() + " in gear : \(gear)"
+    }
+}
+
 class ViewController4: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        ClassAndStruct();
+        ClassAndStruct()
         
-        PropertyFunc();
+        PropertyFunc()
         
+        subscriptFunc()
+        
+        inheritFunc()
     }
+    
+
         
         
 
@@ -189,6 +322,7 @@ class ViewController4: UIViewController {
             println("\(s)")
         }
         // 这个时候importer还没有加载，只有当使用这个属性的时候才开始加载
+        //只有当初始化完成以及 self 确实存在后,才能访问 lazy 属性。
         
         
         
@@ -227,6 +361,58 @@ class ViewController4: UIViewController {
         ClassProperty.counter = 10
         println("ClassProperty Value: \(ClassProperty.counter)")
         
+        //方法
+        var counter = Counter()
+        counter.IncrementBy(5, times: 2)
+            
+        //Mutating
+        var pt = Point()
+        pt.moveByX(5, y: 5)
+        println("new point: \(pt.x),\(pt.y)")
+            
+        // error 值类型设成常亮， 不能修改属性
+//        var pt = Point()
+//        pt.moveByX(5, y: 5)
+            
+            
+            
+        //类型方法
+        CounterEx.IncrementBy(0, times: 0)
+        
+    }
+    
+    func subscriptFunc(){
+        
+        var matrix = Matrix(rows: 2, columns: 2)
+        matrix[0, 1] = 2
+        matrix[1, 0] = 5
+        
+        for n in matrix.grid{
+            println("grid value: \(n)")
+        }
+        
+    }
+    
+    func inheritFunc(){
+        var baseVehicle = Vehicle()
+        println(baseVehicle.description())
+        
+        var bicycle = Bicycle()
+        println(bicycle.description())
+        
+        var tendem = Tendem()
+        println(tendem.description())
+        
+        var car = Car()
+        println(car.description())
+        
+        var carLimitSpeed = SpeedLimitCar()
+        carLimitSpeed.speed = 100
+        println(carLimitSpeed.description())
+        
+        var automaticCar = AutomaticCar();
+        automaticCar.speed = 500
+        println(automaticCar.description())
     }
 
 }

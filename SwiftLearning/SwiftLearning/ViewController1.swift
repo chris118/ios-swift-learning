@@ -78,8 +78,6 @@ class ViewController1: UIViewController {
         var bDemo = true
         if bDemo{
             println("I am Boolean and is true")
-        }else{
-            println("I am Boolean and is false")
         }
         
         //元组 (tuples)
