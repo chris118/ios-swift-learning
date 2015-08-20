@@ -13,7 +13,7 @@ class ViewController3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
         
         var numberArr = [1,8,3,6,19,32,45,46,73,23]
         
@@ -81,15 +81,7 @@ class ViewController3: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     func sort_numbers(var numbers: [Int], compare:(n1: Int, n2: Int) -> Bool) -> [Int]{
         

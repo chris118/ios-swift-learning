@@ -17,6 +17,7 @@
 		884209211B5FD6FE00315345 /* SwiftLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884209201B5FD6FE00315345 /* SwiftLearningTests.swift */; };
 		8842092B1B5FD96900315345 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842092A1B5FD96900315345 /* ViewController1.swift */; };
 		88A01BA51B6E676C00400847 /* ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A01BA41B6E676C00400847 /* ViewController6.swift */; };
+		88A4DC281B8613FC001602C9 /* ViewController9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A4DC271B8613FC001602C9 /* ViewController9.swift */; };
 		88D8C6D41B725EBD00065EC0 /* ViewController8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D8C6D31B725EBD00065EC0 /* ViewController8.swift */; };
 		88DCD7611B65123D0074AB5E /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DCD7601B65123D0074AB5E /* ViewController4.swift */; };
 		88E352881B7111BC009C9133 /* ViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E352871B7111BC009C9133 /* ViewController7.swift */; };
@@ -49,6 +50,7 @@
 		8842092A1B5FD96900315345 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		8842092C1B5FDFEA00315345 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		88A01BA41B6E676C00400847 /* ViewController6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController6.swift; sourceTree = "<group>"; };
+		88A4DC271B8613FC001602C9 /* ViewController9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController9.swift; sourceTree = "<group>"; };
 		88D8C6D31B725EBD00065EC0 /* ViewController8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController8.swift; sourceTree = "<group>"; };
 		88DCD7601B65123D0074AB5E /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		88E352871B7111BC009C9133 /* ViewController7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController7.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				88A01BA41B6E676C00400847 /* ViewController6.swift */,
 				88E352871B7111BC009C9133 /* ViewController7.swift */,
 				88D8C6D31B725EBD00065EC0 /* ViewController8.swift */,
+				88A4DC271B8613FC001602C9 /* ViewController9.swift */,
 				8842090E1B5FD6FE00315345 /* Main.storyboard */,
 				884209111B5FD6FE00315345 /* Images.xcassets */,
 				884209131B5FD6FE00315345 /* LaunchScreen.xib */,
@@ -243,6 +246,7 @@
 				8842092B1B5FD96900315345 /* ViewController1.swift in Sources */,
 				8806740D1B637AFC00CFA462 /* ViewController2.swift in Sources */,
 				8842090D1B5FD6FE00315345 /* ViewController.swift in Sources */,
+				88A4DC281B8613FC001602C9 /* ViewController9.swift in Sources */,
 				88A01BA51B6E676C00400847 /* ViewController6.swift in Sources */,
 				88E352881B7111BC009C9133 /* ViewController7.swift in Sources */,
 				88D8C6D41B725EBD00065EC0 /* ViewController8.swift in Sources */,
