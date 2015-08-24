@@ -18,7 +18,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FYg-SJ-Zwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-178" y="-7"/>
+            <point key="canvasLocation" x="-562" y="689"/>
         </scene>
         <!--Swift Learning-->
         <scene sceneID="NXz-qN-DBY">
@@ -113,6 +113,15 @@
                                     <segue destination="CgL-cc-6Ys" kind="show" id="ly5-Ka-9QJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25f-hk-dLX">
+                                <rect key="frame" x="41" y="280" width="87" height="30"/>
+                                <state key="normal" title="协议protocal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="i9u-px-lfV" kind="show" id="zNQ-dZ-FBR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -120,12 +129,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dvk-Fw-hyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="568" y="-19"/>
+            <point key="canvasLocation" x="696" y="677"/>
         </scene>
-        <!--类之二-->
+        <!--类结构之二-->
         <scene sceneID="tcu-ec-h6k">
             <objects>
-                <viewController title="类之二" id="ot7-CO-992" customClass="ViewController5" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="类结构之二" id="ot7-CO-992" customClass="ViewController5" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NQK-GS-3UK"/>
                         <viewControllerLayoutGuide type="bottom" id="oHp-cN-kno"/>
@@ -138,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ya-DG-gKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300" y="-1861"/>
+            <point key="canvasLocation" x="2132" y="-2389"/>
         </scene>
         <!--ARC-->
         <scene sceneID="loO-Yj-iif">
@@ -156,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaW-Cz-AWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-894" y="1080"/>
+            <point key="canvasLocation" x="-518" y="1688"/>
         </scene>
         <!--自判断链接-->
         <scene sceneID="adS-dV-YRe">
@@ -174,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fkv-WE-Cc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-115" y="1083"/>
+            <point key="canvasLocation" x="261" y="1691"/>
         </scene>
         <!--类型转换-->
         <scene sceneID="e35-pN-Oz4">
@@ -192,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Am3-tJ-f4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="802" y="1147"/>
+            <point key="canvasLocation" x="1050" y="1699"/>
         </scene>
         <!--扩展-->
         <scene sceneID="LqT-Zn-10D">
@@ -210,12 +219,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrc-KF-9cQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1646" y="1177"/>
+            <point key="canvasLocation" x="1846" y="1649"/>
         </scene>
-        <!--类 结构-->
+        <!--协议委托-->
+        <scene sceneID="sf1-vB-mHJ">
+            <objects>
+                <viewController title="协议委托" id="i9u-px-lfV" customClass="ViewController10" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QGx-zl-HzI"/>
+                        <viewControllerLayoutGuide type="bottom" id="SZq-ZS-K21"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ScZ-9H-4qN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6uH-j0-3KQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2540" y="1643"/>
+        </scene>
+        <!--类结构之一-->
         <scene sceneID="vy2-ri-8AN">
             <objects>
-                <viewController title="类 结构" id="F2O-71-FhA" customClass="ViewController4" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="类结构之一" id="F2O-71-FhA" customClass="ViewController4" customModule="SwiftLearning" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZeP-Tb-70O"/>
                         <viewControllerLayoutGuide type="bottom" id="xuh-cu-F7j"/>
@@ -229,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFS-wR-Osa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2372" y="-1902"/>
+            <point key="canvasLocation" x="1244" y="-2374"/>
         </scene>
         <!--基础部分-->
         <scene sceneID="nQj-dl-Sbh">
@@ -248,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BF8-3O-kgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-420" y="-1943"/>
+            <point key="canvasLocation" x="-1548" y="-2415"/>
         </scene>
         <!--函数-->
         <scene sceneID="P11-TO-enk">
@@ -267,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgf-fb-JyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="500" y="-1935"/>
+            <point key="canvasLocation" x="-628" y="-2407"/>
         </scene>
         <!--闭包-->
         <scene sceneID="fra-9P-peL">
@@ -286,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7x9-5H-ju3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1484" y="-1902"/>
+            <point key="canvasLocation" x="356" y="-2374"/>
         </scene>
     </scenes>
 </document>

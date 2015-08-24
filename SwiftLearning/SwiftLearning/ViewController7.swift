@@ -107,7 +107,7 @@ class ViewController7: UIViewController {
         println("\(count)")
 
         //通过自判断链接调用方法
-        var retFunc = john.residence?.printNumbersOfRooms()  //()?
+        var retFunc: ()? = john.residence?.printNumbersOfRooms()  //()?
         println("\(retFunc)") // print nil
 
         //使用自判断链接调用子脚本
